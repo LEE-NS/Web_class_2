@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button, input {
+    line-height: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #171819;
+}
+a {
+    text-decoration: none;
+}
+img, button, input {
+    vertical-align: top;
+}
+button, input {
+    border: 0;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+address {
+    font-style: normal;
+}
+
+.hide {
+    /* 숨겨야 할 요소들을 한 데 묶음 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex16</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* style */
+        ul {
+            width: 328px;
+            margin: 0 auto;
+            padding: 10px 10px 0 10px;
+            background-color: lightcoral;
+        }
+
+        ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        ul > li {
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+        }
+
+        ul > li:nth-child(3), li:nth-child(6) {
+            margin-right: 0;
+        }
+
+        ul > li > a > img {
+            width: 100%;
+        }
+
+        ul > li > a > div {
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./img1.jpg" alt="1">
+                    <div>
+                        <div><b>JDX점퍼 83%↓</b><br>지금날씨에딱이야</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img2.jpg" alt="2">
+                    <div>
+                        <div><b>신기하게도</b><br>꿈을 안꿔요~</div>
+                    </div>
+                </a>
+            </li>
+            <li class="li_1">
+                <a href="#">
+                    <img src="./img3.jpg" alt="3">
+                    <div>
+                        <div><b>나만 알고싶었어</b><br>우리집 청소꿀템</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img4.jpg" alt="4">
+                    <div>
+                        <div><b>네파 구스다운</b><br>6만원대 특가</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img5.jpg" alt="5">
+                    <div>
+                        <div><b>후끈후끈~하잖아</b><br>올겨울 문제없어!</div>
+                    </div>
+                </a>
+            </li>
+            <li class="li_1">
+                <a href="#">
+                    <img src="./img6.jpg" alt="6">
+                    <div>
+                        <div><b>10시간 게임해도~</b><br>손이 안아파~</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>

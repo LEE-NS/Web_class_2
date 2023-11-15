@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            margin-top: 10px;
+            list-style: none;
+        }
+
+        /* style bg */
+        .bg ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .bg ul li {
+            float: left;
+            width: 208px;
+            height: 60px;
+            text-indent: -99999px;
+        }
+
+        .bg ul li:nth-child(1) {
+            background-image: url(./img/menu01.jpg);
+        }
+        .bg ul li:nth-child(2) {
+            background-image: url(./img/menu02.jpg)
+        }
+        .bg ul li:nth-child(3) {
+            background-image: url(./img/menu03.jpg)
+        }
+        .bg ul li:nth-child(4) {
+            background-image: url(./img/menu04.jpg)
+        }
+        .bg ul li:nth-child(5) {
+            background-image: url(./img/menu05.jpg)
+        }
+
+        .bg ul li:nth-child(1):hover {
+            background-image: url(./img/menu01_on.jpg)
+        }
+        .bg ul li:nth-child(2):hover {
+            background-image: url(./img/menu02_on.jpg)
+        }
+        .bg ul li:nth-child(3):hover {
+            background-image: url(./img/menu03_on.jpg)
+        }
+        .bg ul li:nth-child(4):hover {
+            background-image: url(./img/menu04_on.jpg)
+        }
+        .bg ul li:nth-child(5):hover {
+            background-image: url(./img/menu05_on.jpg)
+        }
+
+        /* style img */
+        .img ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .img ul li {
+            float: left;
+            width: 208px;
+            height: 60px;
+        }
+
+        .img ul li img.on {
+            display: none;
+        }
+
+        .img ul li:hover img {
+            display: none;
+        }
+
+        .img ul li:hover img.on {
+            display: block;
+        }
+        /* 굳이 position 으로 겹치지 않아도 display: none; 때문에 사라진 공간을 알아서 메움 */
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1>background-image를 활용한 hover</h1>
+        <ul>
+            <li>회사소개</li>
+            <li>제품소개</li>
+            <li>사업분야</li>
+            <li>커뮤니티</li>
+            <li>공지사항</li>
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="img">
+        <h1>img 태그를 이용한 hover</h1>
+        <ul>
+            <li>
+                <img src="./img/menu01.jpg" alt="01">
+                <img src="./img/menu01_on.jpg" alt="01_on" class="on">
+            </li>
+            <li>
+                <img src="./img/menu02.jpg" alt="02">
+                <img src="./img/menu02_on.jpg" alt="02_on" class="on">
+            </li>
+            <li>
+                <img src="./img/menu03.jpg" alt="03">
+                <img src="./img/menu03_on.jpg" alt="03_on" class="on">
+            </li>
+            <li>
+                <img src="./img/menu04.jpg" alt="04">
+                <img src="./img/menu04_on.jpg" alt="04_on" class="on">
+            </li>
+            <li>
+                <img src="./img/menu05.jpg" alt="05">
+                <img src="./img/menu05_on.jpg" alt="05_on" class="on">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

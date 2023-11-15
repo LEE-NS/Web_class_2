@@ -1,0 +1,43 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, button, input {
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+}
+img, button, input {
+    vertical-align: top;
+}
+button, input {
+    border: 0;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+address {
+    font-style: normal;
+}
+
+/* hide */
+.hide {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}

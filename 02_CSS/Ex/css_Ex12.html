@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex12</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100vh;
+            padding: 50px 20px;
+            background-image: url(../img/sale_bg.png);
+            background-size: 150px;
+        }
+
+        .box p {
+            width: 120px;
+            height: 40px;
+            margin: 50px 0 0 160px;
+            line-height: 40px;
+            text-align: center;
+            background-color: brown;
+        }
+        .box p a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #eee;
+            /* a태그의 경우는 글자 색(color속성)과 같은 속성은 부모 요소에게서 inherit 되지 않음  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../img/shop_now.jpg" alt="sale">
+        <p>
+            <a href="#">자세히 보기</a>
+        </p>
+    </div>
+</body>
+</html>

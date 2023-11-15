@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+    <style>
+        /* style */
+        ul > li {
+            width: 150px;
+            height: 100px;
+            margin-bottom: 50px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 15px;
+            color: #fff;
+            background-color: coral;
+        }
+
+        ul > li:nth-child(1) {
+            border-radius: 20px;
+        }
+        ul > li:nth-child(2) {
+            border-radius: 20%;
+        }
+        ul > li:nth-child(3) {
+            height: 150px;
+            border-radius: 50%;
+        }
+        ul > li:nth-child(4) {
+            border-radius: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>border-radius : 곡선형 모서리</h1>
+    <p>속성값 : px, %</p>
+    <p>원을 그릴때는 border-radius 값을 50%로 주면 된다. (타원이 아닌 완전한 원을 그릴 때는 width와 height를 일치시키면 됨</p>
+    <p>
+        border-radius: 10px 20px 30px 40px;<br>
+        → 좌상 10px, 우상 20px, 우하 30px, 좌하 40px
+    </p>
+    <p>img 태그에도 적용 가능</p>
+    <br><br>
+    <!-- 예시 -->
+    <ul>
+        <li>20px</li>
+        <li>20%</li>
+        <li>원 그리기</li>
+        <li>10px 20px 30px 40px</li>
+    </ul>
+</body>
+</html>

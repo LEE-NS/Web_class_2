@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex20221118-2(hover)</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style */
+
+        /* style bg-img를 활용한 hover */
+        .box1 {
+            width: 1040px;
+            height: 60px;
+        }
+
+        .box1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box1 p {
+            float: left;
+            width: 208px;
+            height: 60px;
+        }
+
+        .box1 p, .box1 p:hover {
+            background-position: center center;
+            background-size: contain;
+        }
+
+        .p1 {
+            background-image: url(./menu01.jpg);
+        }
+
+        .p1:hover {
+            background-image: url(./menu01_on.jpg);
+        }
+
+        .p2 {
+            background-image: url(./menu02.jpg);
+        }
+
+        .p2:hover {
+            background-image: url(./menu02_on.jpg);
+        }
+
+        .p3 {
+            background-image: url(./menu03.jpg);
+        }
+
+        .p3:hover {
+            background-image: url(./menu03_on.jpg);
+        }
+
+        .p4 {
+            background-image: url(./menu04.jpg);
+        }
+
+        .p4:hover {
+            background-image: url(./menu04_on.jpg);
+        }
+
+        .p5 {
+            background-image: url(./menu05.jpg);
+        }
+
+        .p5:hover {
+            background-image: url(./menu05_on.jpg);
+        }
+
+        /* style img 태그를 활용한 hover */
+        .box2 {
+            position: relative;
+        }
+
+        .box2 p {
+            position: absolute;
+            width: 208px;
+            height: 60px;
+        }
+
+        .box2 p img:nth-child(2) {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box2 p {
+            top: 0;
+        }
+
+        .a-p1 {
+            left: 0;
+        }
+
+        .a-p2 {
+            left: 208px;
+        }
+
+        .a-p3 {
+
+            left: 416px;
+        }
+
+        .a-p4 {
+            left: 624px;
+        }
+
+        .a-p5 {
+            left: 832px;
+        }
+
+        .box2 p:hover img:nth-child(2) {
+            display: block;
+        } 
+        </style>
+</head>
+<body>
+    <h1>background-image를 활용한 hover</h1>
+    <div class="box1">
+        <p class="p1"></p>
+        <p class="p2"></p>
+        <p class="p3"></p>
+        <p class="p4"></p>
+        <p class="p5"></p>
+    </div>
+    <br>
+    <h1>img태그를 이용한 hover</h1>
+    <div class="box2">
+        <p class="a-p1">
+            <img src="./menu01.jpg" alt="01">
+            <img src="./menu01_on.jpg" alt="01_on">
+        </p>
+        <p class="a-p2">
+            <img src="./menu02.jpg" alt="02">
+            <img src="./menu02_on.jpg" alt="02_on">
+        </p>
+        <p class="a-p3">
+            <img src="./menu03.jpg" alt="03">
+            <img src="./menu03_on.jpg" alt="03_on">
+        </p>
+        <p class="a-p4">
+            <img src="./menu04.jpg" alt="04">
+            <img src="./menu04_on.jpg" alt="04_on">
+        </p>
+        <p class="a-p5">
+            <img src="./menu05.jpg" alt="05">
+            <img src="./menu05_on.jpg" alt="05_on">
+        </p>
+    </div>
+</body>
+</html>

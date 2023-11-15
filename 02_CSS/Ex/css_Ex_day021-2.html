@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day021-2</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* wrap */
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: lightpink;
+        }
+        .wrap > .box_1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -400px 0 0 -400px;
+            width: 800px;
+            height: 800px;
+            background-color: skyblue;
+        }
+
+        /* style p */
+        p {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            background-color: blueviolet;
+            color: #fff;
+        }
+
+        .purple1 {
+            top: 0;
+            left: 0;
+        }
+        .purple2 {
+            top: 0;
+            left: 50%;
+        }
+        .purple3 {
+            top: 25%;
+            left: 25%;
+        }
+        .purple4 {
+            top: 25%;
+            left: 75%;
+        }
+        .purple5 {
+            top: 50%;
+            left: 0;
+        }
+        .purple6 {
+            top: 50%;
+            left: 50%;
+        }
+        .purple7 {
+            top: 75%;
+            left: 25%;
+        }
+        .purple8 {
+            top: 75%;
+            left: 75%;
+        }
+
+        /* style span */
+        span {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            background-color: beige;
+            color: #000;
+        }
+
+        .beige1 {
+            top: 0;
+            left: 12.5%;
+        }
+        .beige2 {
+            top: 0;
+            left: 50%;
+        }
+        .beige3 {
+            top: 25%;
+            left: 25%;
+        }
+        .beige4 {
+            top: 25%;
+            left: 62.5%;
+        }
+        .beige5 {
+            top: 50%;
+            left: 50%;
+            margin: -25px 0 0 -25px;
+            background-color: greenyellow;
+        }
+        .beige6 {
+            top: 50%;
+            left: 75%;
+        }
+        .beige7 {
+            top: 75%;
+            left: 0;
+        }
+        .beige8 {
+            top: 100%;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box_1">
+            <p class="purple1">
+                <span class="beige1">1.</span>
+                <span class="beige2">2.</span>
+                <span class="beige3">3.</span>
+                <span class="beige4">4.</span>
+                <span class="beige5">5.</span>
+                <span class="beige6">6.</span>
+                <span class="beige7">7.</span>
+                <span class="beige8">8.</span>
+            </p>
+            <p class="purple2">2</p>
+            <p class="purple3">3</p>
+            <p class="purple4">4</p>
+            <p class="purple5">5</p>
+            <p class="purple6">6</p>
+            <p class="purple7">7</p>
+            <p class="purple8">8</p>
+        </div>
+    </div>
+</body>
+</html>

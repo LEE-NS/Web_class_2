@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+</head>
+<body>
+    <h1>함수 과제 - 1</h1>
+</body>
+<script>
+    //숙제
+        
+    //1. "안녕 내 이름은 제시카야"라는 문장을 프린트하는 함수 'greet’를 만드시오
+    function greet() {
+        console.log('안녕 내 이름은 제시카야');
+    }
+    greet();
+
+    //2. 이름을 매개변수로 전달받아 다양한 이름을 프린트 할 수 있게 함수를 수정하시오 예) “안녕 내 이름은 에밀리야”, “안녕 내 이름은 할리야”
+    function greet(name) {
+        console.log('안녕 내 이름은', name, '(이)야');
+    }
+    greet('에밀리');
+    greet('할리');
+
+    //3. 매개변수로 전달받은 이름을 반환하게 함수를 수정하시오 
+    function greet(name) {
+        return name;
+    }
+    
+    let a = greet('으악');
+    console.log('안녕 내 이름은', a, '(이)야')
+</script>
+</html>

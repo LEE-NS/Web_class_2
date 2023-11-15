@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* font */
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* style header */
+header {
+    margin: 30px 0 60px 0;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 a {
+    font-family: 'Itim', cursive;
+    font-size: 70px;
+    font-weight: 600;   
+}
+
+header hr {
+    width: 4%;
+    margin: 30px auto 15px;
+    border-style: none;
+    border-bottom: 1px solid orange;
+}
+
+header .subtitle p {
+    text-align: center;
+}
+
+header .subtitle p:nth-child(1) {
+    font-size: 30px;
+}
+header .subtitle p:nth-child(2) {
+    color: #999;
+}
+
+
+/* style main s1*/
+main .s1 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.s1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .s1 .s1_left {
+    float: left;
+    width: 25%;
+    margin-right: 6%;
+}
+
+main .s1 .s1_right {
+    float: right;
+    width: 69%;
+}
+
+.s1_right .right-1 > div:first-child {
+    margin-bottom: 16px;
+}
+
+.s1_right .right-1 > p {
+    margin-bottom: 16px;
+    line-height: 1.6em;
+}
+
+.s1_right .right-1 ul {
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.6em;
+    margin-bottom: 16px;
+}
+
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.s1_right .right-1 .profile div {
+    float: right;
+}
+
+.s1_right .right-1 .profile div:nth-child(2) {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.s1_right .right-2 div:nth-child(1) {
+    margin-bottom: 16px;
+}
+
+.s1_right .right-2 > div:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.s1_right .right-2 p {
+    line-height: 1.6em;
+}
+
+main hr {
+    border-style: none;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* style main s2 */
+main .s2 {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.s2 > div {
+    margin-bottom: 16px;
+} 
+
+.s2 ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.s2 ul li {
+    float: left;
+    margin-right: 75px;
+}
+
+.s2 ul li:last-child {
+    margin-right: 0;
+}
+
+.s2 ul li a div img {
+    width: 350px;
+}
+
+
+/* style footer */
+footer {
+    margin: 60px 0 30px;
+}

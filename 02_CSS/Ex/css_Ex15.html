@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex15</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        /* style */
+        .ul_0 {
+            width: 780px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        
+        .ul_0::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .ul_0 > li {
+            float: left;
+            width: 250px;
+            margin-right: 10px;
+            background-color: lightgray;
+        }
+
+        .ul_0 > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .ul_0 > li > a > div > h3 {
+            width: 80px;
+            padding: 0 85px;
+            line-height: 40px;
+            font-size: 17px;
+        }
+
+        .ul_0 > li > a > div > .p_1 {
+            width: 200px;
+            padding: 0 25px;
+            font-size: 13px;
+        }
+
+        .ul_0 > li > a > div > .p_2 {
+            width: 150px;
+            padding: 0 50px 10px;
+            font-size: 13px;
+        }
+
+        .ul_0 > li > a > img {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <ul class="ul_0">
+            <li>
+                <a href="#">
+                    <img src="../img/wallet.png" alt="money_plan_1">
+                    <div>
+                        <h3>머니 플랜</h3>
+                        <p class="p_1">은행, 보험, 증권, 신용카드, 채권</p>
+                        <p class="p_2">모든 금융 정보를 한 눈에</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/coin.png" alt="money_plan_2">
+                    <div>
+                        <h3>머니 플랜</h3>
+                        <p class="p_1">은행, 보험, 증권, 신용카드, 채권</p>
+                        <p class="p_2">모든 금융 정보를 한 눈에</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/calculator.png" alt="money_plan_3">
+                    <div>
+                        <h3>머니 플랜</h3>
+                        <p class="p_1">은행, 보험, 증권, 신용카드, 채권</p>
+                        <p class="p_2">모든 금융 정보를 한 눈에</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>    
+</body>
+</html>

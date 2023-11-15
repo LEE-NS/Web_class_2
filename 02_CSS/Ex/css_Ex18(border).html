@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex18(border)</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* style box0*/
+        .box0_top {
+            margin: 20px 0 0 20px;
+        }
+
+        .box0 > h1 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .box0 > ul {
+            width: 450px;
+            padding: 20px;
+            border: 1px solid #555;
+        }
+
+        .box0 > ul > li {
+            line-height: 40px;
+            border-bottom: 1px dashed #555;
+        }
+
+        .box0 > ul > li:last-child {
+            border-bottom: none;
+        }
+
+        .box0 > ul > li > a > span {
+            float: right;
+            font-size: 14px;
+            color: #999;
+        }
+
+
+        /* style box1 */
+        .box1_top {
+            margin: 20px 0 0 10px
+        }
+
+        .box1 {
+            width: 350px;
+            padding: 20px;
+            background-color: antiquewhite;
+            border: 1px solid #ccc;
+        }
+
+        .box1 > h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .box1 > p {
+            font-size: 15px;
+            margin-bottom: 35px;
+            letter-spacing: -0.5px;
+        }
+
+        .box1 > a {
+            padding: 5px 15px;
+            border: 3px solid hotpink;
+        }
+
+        /* style box2 */
+        .box2 > ul > li {
+            width: 550px;
+            height: 40px;
+            margin: 0 0 20px 10px;
+            padding: 5px;
+            line-height: 40px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .box2 > ul > li:nth-child(1) {
+            border-top: 3px solid black;
+        }
+
+        .box2 > ul > li:nth-child(2) {
+            border-left: 10px solid red;
+        }
+
+        .box2 > ul > li:nth-child(3) {
+            border: 3px solid aqua;
+            border-radius: 10px;
+        }
+        /* 선택자 / 코드 등을 다양하게 써보도록 할 것, 항상 확장성을 고려 */
+
+
+        /* style box3 */
+        .box3 > ul > li {
+            width: 300px;
+            margin: 0 0 10px 5px ;
+            font-size: 20px;
+            font-weight: 900;            
+        }
+
+        .box3 > ul > li:nth-child(1) {
+            border: 3px solid black;
+        }
+        .box3 > ul > li:nth-child(2) {
+            border: 3px dotted black;
+        }
+        .box3 > ul > li:nth-child(3) {
+            border: 3px dashed black;
+        }
+        .box3 > ul > li:nth-child(4) {
+            border: 3px double black;
+        }
+
+        /* style box4 */
+        .box4 {
+            width: 380px;
+            height: 40px;
+            margin: 0 auto;
+            padding: 15px;
+            border: 8px solid darkgreen;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box0_top">
+        <div class="box0">
+            <h1>공지사항</h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        방학맞이~ 한여름 동물원 대탐험~~~
+                        <span>2019.08.11</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        방학맞이~ 한여름 동물원 대탐험~~~
+                        <span>2019.08.11</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        방학맞이~ 한여름 동물원 대탐험~~~
+                        <span>2019.08.11</span>
+                    </a>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    <br><br><br>
+    <div class="box1_top">
+        <div class="box1">
+            <h1>산림욕장 안내</h1>
+            <p>470여 종의 식물과 다람쥐, 산토끼, 족제비, 너구리 및 35종의 새들이 살고 있는 최적의 자연학습장입니다.</p>
+            <a href="#">자세히보기 ></a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="box2">
+        <ul>
+            <li>도심 속 생태문화공원 서울대공원</li>
+            <li>도심 속 생태문화공원 서울대공원</li>
+            <li>도심 속 생태문화공원 서울대공원</li>
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="box3">
+        <ul>
+            <li>박스 모델이란?</li>
+            <li>박스 모델이란?</li>
+            <li>박스 모델이란?</li>
+            <li>박스 모델이란?</li>
+        </ul>
+    </div>
+    <br><br><br>
+    <p class="box4">웹 페이지에 있는 모든 HTML 요소는 사각형 형태를 가지는 박스로 생각할 수 있다.</p>
+    <br><br>
+</body>
+</html>

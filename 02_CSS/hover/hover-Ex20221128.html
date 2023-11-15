@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover-Ex20221128</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* #wrap */
+        ul {
+            display: flex;
+            width: 1200px;
+            margin: 50px auto;
+        }
+
+        li {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            
+            transition: all 0.5s;
+        }
+        
+        li:nth-child(1) {background-color: rgb(208, 101, 3);}
+        li:nth-child(2) {background-color: rgb(233, 147, 26);}
+        li:nth-child(3) {background-color: rgb(22, 145, 190);}
+        li:nth-child(4) {background-color: rgb(22, 107, 162);}
+        li:nth-child(5) {background-color: rgb(27, 54, 71);}
+        li:nth-child(6) {background-color: rgb(21, 40, 54);}
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 30px auto;
+            border-radius: 50%;
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0); /* 기본 상태일 때의 그림자 */
+            transition: all 0.5s;
+
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .icon > img {
+            width: 50%;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+        }
+
+        /* hover */
+        li:hover {
+            height: 250px;
+            border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+        }
+
+        ul:hover .icon {
+            /* ul 태그에 hover되었을 때 모든 아이콘들이 투명해진다. */
+            opacity: 0.5;
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); /* li 태그에 호버될 시 그림자의 블러가 사라지고 0.3의 투명도가 생김 */
+        }
+
+        li:hover .icon {
+            opacity: 1;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_bell.png" alt="1">
+                    </p>
+                    <p class="text">New</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_bell.png" alt="1">
+                    </p>
+                    <p class="text">New</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_bell.png" alt="1">
+                    </p>
+                    <p class="text">New</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_setting.png" alt="1">
+                    </p>
+                    <p class="text">Setting</p>
+                </a>
+            </li><li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_bell.png" alt="1">
+                    </p>
+                    <p class="text">Share</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="../img/icon_bell.png" alt="1">
+                    </p>
+                    <p class="text">Download</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

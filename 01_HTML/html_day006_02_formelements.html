@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 요소</title>
+</head>
+<body>
+    <h1>fieldset / legend</h1>
+    <p>form 요소를 그룹으로 묶어주는 태그들이다.</p>
+    <p>fieldset 태그로 하나의 그룹으로 묶어서 외곽선을 그려주고, legend 태그로 제목을 적어준다.</p>
+    <p>사용자화 되어있지 않아 잘 사용하지 않음.</p>
+    <br><br><br>
+    <form>
+        <fieldset>
+            <legend>필수 요소</legend>
+            <label for="id">아이디</label>
+            <input type="text" id="id">
+            <br>
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw">
+        </fieldset>
+        <fieldset>
+            <legend>선택 요소</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+                <br>
+                성별
+                남 <input type="radio" name="gender">
+                여 <input type="radio" name="gender">       
+        </fieldset>
+    </form>
+</body>
+</html>

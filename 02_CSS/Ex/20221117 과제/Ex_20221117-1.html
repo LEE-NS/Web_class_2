@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20221117-1</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .top, main {
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* style */
+
+        /* style header */
+        header {
+            height: 160px;
+            background-color: skyblue;
+        }
+
+        .h_bg {
+            
+            margin-bottom: auto;
+            
+        }
+
+        .title {
+            width: 100%;
+            height: 70px;
+            background-color: beige;
+        }
+
+        .title::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .title h1 {
+            float: left;
+            width: 20%;
+            height: 55px;
+            margin-top: 7.5px;
+            background-color: pink;
+        }
+        .title > h1 > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .title .search {
+            float: right;
+            margin-top: 25px;
+        }
+
+        .title .search label {
+            margin-right: 10px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .title .search input {
+            width: 270px;
+            line-height: 25px;
+            text-indent: 10px;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            background-color: transparent;
+        }
+
+        .top_menu {
+            margin-top: 20px;
+        }
+
+        .top_menu ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .top_menu ul li {
+            float: left;
+            width: 15%;
+            height: 30px;         
+            margin-right: 2%;
+            line-height: 30px;
+            text-align: center;
+            background-color: orange;
+        }
+
+        .top_menu ul li:last-child {
+            margin-right: 0;
+        }
+
+        .top_menu > ul > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* style main */
+        main {
+            margin: 100px auto;
+        }
+
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main .con {
+            float: left;
+            width: 66%;
+            height: 500px;
+            margin-right: 5%;
+            background-color: darksalmon;
+        }
+
+        main .con_side {
+            float: right;
+            width: 29%;
+            height: 500px;
+            background-color: khaki;
+        }
+
+        /* style footer */
+        footer div {
+            height: 160px;
+            padding-top: 20px;
+            text-align: center;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="inner">
+            <header>
+                <div class="top">
+                    <div class="title">
+                        <h1><a href="#">로고</a></h1>
+                            <div class="search">
+                                <label for="input_s">검색</label>
+                                <input type="search" placeholder="검색" id="input_s">
+                            </div>
+                        </div>
+                    <div class="top_menu">
+                        <ul>
+                            <li><a href="#">메뉴1</a></li>
+                            <li><a href="#">메뉴2</a></li>
+                            <li><a href="#">메뉴3</a></li>
+                            <li><a href="#">메뉴4</a></li>
+                            <li><a href="#">메뉴5</a></li>
+                            <li><a href="#">메뉴6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- header -->
+            <main>
+                <div class="con">메인</div>
+                <aside>
+                    <div class="con_side">사이드바</div>
+                </aside>
+            </main>
+            <!-- main -->
+            <footer>
+                <div>푸터</div>
+            </footer>
+            <!-- footer -->            
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /* 태그 선택자 */
+        li {
+            font-size: 20px;
+        }
+
+        /* class 선택자 */
+        .an {
+            color: coral;
+        }
+
+        /* id 선택자 */
+        #cup {
+            color: red;
+        }
+
+        /* 복합 선택자 (다중) */
+        .shin, .jja {
+            color: blueviolet;
+        }
+
+        /* 하위 요소 선택자 */
+        ul li {
+            font-size: 13px;
+        }
+
+        /* 하위 요소 선택자 2 (자식 요소가 아닌 하위 요소를 선택하는 선택자) */
+        ul a {
+            font-weight: 900;
+        }
+
+        /* V 하위 요소 선택자 3 (자식 요소를 선택하는 선택자) */
+        .jjam > ul {
+            color: hotpink;
+        }
+
+        /* 종속 선택자 (태그에 종속된 class를 선택 : 아래의 예시 - p 태그이면서 yook 이라는 class를 가진 요소) */
+        p.yook {
+            color: sandybrown;
+        }
+
+        /* 인접 선택자 (인접한, 또는 다음에 오는 태그를 선택하는 선택자) */
+        .bi + li {
+            color: olive;
+        }
+
+        /* 형제 선택자 (자신을 제외한 뒤에 나오는 인접한 형제 요소를 선택) */
+        .jin2 ~ li {
+            font-size: 20px;
+        }
+
+        /* V 순서 선택자 (순서를 입력하여 그 순서에 해당하는 것을 선택) */
+        li:nth-child(5) {
+            color: crimson;
+        }
+
+        /* 하위 선택자, 자식 선택자를 사용해서 한가지만 선택 */
+        .jjam li:nth-child(3) {
+            font-size: 13px;
+        }
+
+        body > ul > li:first-child {
+            font-style: italic;
+        }
+        
+        body > ul > li:last-child {
+            font-style: oblique;
+        }
+
+        /* 짝수 선택자 */
+        li:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+
+        /* 홀수 선택자 */
+        li:nth-child(odd) {
+            background-color: lightcyan;
+        }
+
+        /* 배수 선택자 (예시 - 3의 배수)*/
+        li:nth-child(3n) {
+            color: lime;
+        }
+
+        /* 인접 선택과 배수 선택 혼합 (예시 - 2번쨰 부터 시작해서 3의 배수 번째의 요소를 선택 ) */
+        li:nth-child(3n + 2) {
+            color: orchid;
+        }
+
+        /* 중첩 선택자 */
+        .yook#sa {
+            text-decoration: overline;
+        }
+
+        /* V 제외 선택자 */
+        .jjam li:not(:nth-child(3)) {
+            font-size: 40px;
+        }
+
+        .jjam li:not(:last-child) {
+            font-size: 10px;
+        }
+        /* ------------------------------------------------------------- */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="an">안성탕면</li>
+        <li class="shin">신라면</li>
+        <li class="jin">진라면</li>
+        <li class="neo">
+            <a href="#"> 너구리</a>
+        </li>
+        <li class="cham">참깨라면</li>
+        <li class="jja">짜파게티</li>
+        <li class="yeol">열라면</li>
+        <li class="hae">
+            해물라면
+            <ul>
+                <li>새우라면</li>
+                <li>전복라면</li>
+                <li>홍합라면</li>
+            </ul>
+        </li>
+        <li class="yook" id="sa">육개장 사발면</li>
+        <li class="yook" id="cup">불닭볶음면</li>
+        <li class="cup">컵누들</li>
+        <li class="bi">비빔면</li>
+        <li class="ra">라면볶이</li>
+        <li class="jjam">
+            짬뽕라면
+            <ul>
+                <li class="jin2">진짬뽕</li>
+                <li>오징어짬뽕</li>
+                <li>나가사키 짬뽕</li>
+                <li>간짬뽕</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="yook">p 태그의 육개장</p>
+</body>
+</html>

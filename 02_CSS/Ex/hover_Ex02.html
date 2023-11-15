@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover_Ex02</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style */
+        p {
+            float: left;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #eee;
+        }
+
+        p:first-child {
+            border-radius: 15px 0 0 15px;
+        }
+
+        p:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+
+        p:hover {
+            background-color: #222;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Home</p>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JQuery</p>
+        <p>Mobile</p>
+        <p>Profile</p>
+    </div>
+</body>
+</html>

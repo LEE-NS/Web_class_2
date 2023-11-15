@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex21</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style box_0*/
+        .box_0 {
+            margin: 30px 10px;
+        }
+
+        .box_0 > h4 {
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .box_0 > p {
+            padding: 30px;
+            line-height: 2em;
+            border: 2px solid green;
+            border-radius: 20px;
+            box-shadow: 7px 7px 10px #777;
+            font-size: 14px;
+        }
+
+        /* style box_1 */
+        .box_1 {
+            width: 300px;
+            margin: 20px;
+            padding: 30px ;
+            border: 2px solid #aaa;
+            border-radius: 15px;
+        }
+
+        .box_1 > .name_1 {
+            padding-bottom: 10px;
+            font-weight: 900;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .box_1 > .text_1 {
+            padding: 10px 0;
+            line-height: 2em;
+            letter-spacing: -0.3px;
+            border-bottom: 1px solid #ddd;
+            font-size: 12px;
+        }
+
+        .box_1 > a {
+            display: block;
+            text-align: right;
+            padding-top: 5px;
+            font-size: 12px;
+        }
+
+        /* css 작성 시 일단 마크업된 구조를 먼저 입력해둔다. css 작성 후 필요없는 부분은 삭제 */
+
+
+        /* style box_2 */
+        .box_2 {
+            margin: 50px 10px;
+        }
+
+        .box_2 > h4 {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            font-weight: 900;
+            border-left: 10px solid lightsalmon;
+        }
+
+        .box_2 > ul {
+            padding: 30px;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+        .box_2 > ul > li:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box_0">
+        <h4>박스 모델이란?</h4>
+        <p>웹 페이지에 있는 모든 HTML 요소는 사각형 형태를 가지는 박스로 생각할 수 있다. CSS에서는 이러한 박스를 기반으로 하여 요소에 경계선을 그릴 수 있으면 여백을 조정하여 요소를 화면에 배치할 수 있게 한다.</p>
+    </div>
+    <!-- box_0 -->
+    <br>
+    <div class="box_1">
+        <p class="name_1">HTML/CSS 강좌</p>
+        <p class="text_1">HTML/CSS를 이용하면 텍스트, 이미지, 비디오, 오디오 등으로 홈페이지를 제작할 수 있어요.^^</p>
+        <a href="#">바로가기 >></a>
+    </div>
+    <!-- box_1 -->
+    <br>
+    <div class="box_2">
+        <h4>우대 정보</h4>
+        <ul>
+            <li>
+                연령에 따른 우대 (나이 확인이 가능한 신분증 또는 서류 제시)
+                <p>- 경로 : 만 65세 ~</p>
+                <p>- 청소년 : 만 13세 ~ 만 18세</p>
+            </li>
+            <li>
+                장애인 우대 (장애인등록증 제시) 우대가격
+                <p>- 1일 이용권 우대가로 구입 가능</p>
+                <p>- 장애의 정도가 심한 장애인 : 본인+동반 1인</p>
+            </li>
+            <li>
+                국가유공자 우대 (증명서류 제시) 파크이용권 가격 보기
+                <p>- 본인 + 동반 1인. 1일 이용권 50% 우대가로 구입 가능</p>
+            </li>
+        </ul>
+    </div>
+    <!-- box_2 -->
+</body>
+</html>

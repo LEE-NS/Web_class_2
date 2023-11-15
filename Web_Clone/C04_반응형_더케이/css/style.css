@@ -1,0 +1,974 @@
+@charset "UTF-8";
+/* 기본화면 - 모바일 기준 */
+/* wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+}
+/* header */
+.h_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+}
+.h_left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.logo a {
+    display: block;
+    width: 115px;
+    height: 19px;
+    background-image: url(../img/logo_site.svg);
+    text-indent: -99999px;
+}
+.hBtn_menu {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.hBtn_menu::before, .hBtn_menu::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 2px;
+    background-color: #333;
+}
+.hBtn_menu span {
+    display: block;
+    width: 17px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #333;
+    text-indent: -99999px;
+}
+.h_utill, .hBtn_rev, .hBtn_lang {
+    display: none;
+}
+.hBtn_search a {
+    display: block;
+    padding: 5px 36px 5px 16px;
+    background-color: #95775f;
+    background-image: url(../img/ico_find_hotel.png);
+    background-repeat: no-repeat;
+    background-size: 13px auto;
+    background-position: right 16px top 7px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* main - main_slide */
+.main_slide {
+    position: relative;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.ms_img .ta {
+    display: none;
+}
+.ms_text {
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.ms_text .mst1 {
+    font-size: 32px;
+    line-height: 1em;
+    font-weight: 700;
+}
+.ms_text .mst2 {
+    width: 60%;
+    margin: 17px 0;
+}
+.ms_text .mst3 {
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* main - promotion, package */
+.promotion {
+    padding: 50px 0;
+    background-color: #fbfbfb;
+}
+.package {
+    padding: 50px 0;
+}
+.main_title {
+    padding: 0 30px;
+    text-align: center;
+}
+.main_title h2 {
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.main_title p {
+    color: #b6a6b6;
+}
+.promo_list {
+    overflow: hidden;
+}
+.promo_list ul {
+    display: flex;
+    width: 380%;
+    padding: 30px 10px;
+}
+.promo_list li {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 10px;
+}
+.promo_list li a {
+    display: block;
+    transition: 0.5s;
+}
+.promo_list li a:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+}
+.promo_text {
+    position: relative;
+    padding: 20px 15px 30px 15px;
+    border-top: 2px solid #333;
+    background-color: #fff;
+}
+.promo_local {
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    padding: 2px 15px;
+    background-color: #232a4f;
+    color: #fff;
+}
+.promo_title {
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+.promo_date {
+    color: #777;
+    font-size: 12px;
+}
+.slide_pager ul {
+    display: flex;
+    justify-content: center;
+}
+.slide_pager li {
+    width: 9px;
+    height: 9px;
+    margin: 0 3px;
+    border-radius: 10px;
+    text-indent: -99999px;
+    cursor: pointer;
+    background-color: #c8c8c8;
+}
+.slide_pager .active {
+    width: 15px;
+    background-color: #222;
+}
+.slide_btn {
+    display: none;
+}
+
+/* main - todo */
+.todo_title {
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.todo_tabBtn ul {
+    display: flex;
+}
+.todo_tabBtn li {
+    padding: 22px 25px 10px 25px;
+    border-top: 2px solid #eaeaea;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ebebeb;
+    color: #aaa;
+}
+.todo_tabBtn .on {
+    border-color: #444;
+    background-color: #fff;
+    color: #333;
+}
+.todo_tabBtn .on::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #444;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    margin: 7px auto 0 auto;
+}
+.todo_box {
+    position: relative;
+    display: none;
+}
+.todo_box.view {
+    display: block;
+}
+.todo_text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+.todo_t1 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.todo_t2 {
+    font-size: 13px;
+}
+
+/* main - overview */
+.overview {
+    position: relative;
+    margin-top: 40px;
+}
+.overview_title {
+    margin: 0 15px 25px 15px;
+    text-align: center;
+}
+.overview_title h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1em;
+    font-weight: 900;
+}
+.overview_title p {
+    font-size: 13px;
+    color: #555;
+}
+.ov_card {
+    position: relative;
+}
+.ov_card .text {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: #fff;
+}
+.ov_card .text .tx1 {
+    margin-bottom: 1px;
+    font-size: 13px;
+}
+.ov2 {
+    display: flex;
+}
+.ov_slide02, .ov22, .ov_slide04 {
+    display: none;
+}
+.ov21, .ov23 {
+    width: 50%;
+}
+.overview_pager {
+    display: none;
+}
+.overview_prev, .overview_next {
+    position: absolute;
+    bottom: 32%;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    padding-top: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overview_prev {
+    left: 15px;
+    padding-left: 24px;
+}
+.overview_next {
+    right: 15px;
+    padding-left: 24px;
+}
+.overview_prev::before, .overview_next::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.overview_prev::before {
+    transform: rotate(-135deg);
+}
+.overview_next::before {
+    transform: rotate(45deg);
+}
+
+/* main - about */
+.about {
+    margin-top: 40px;
+}
+.about h2 {
+    margin: 0 0 25px 15px;
+    line-height: 1.2em;
+    font-size: 26px;
+    font-weight: 900;
+}
+.about h2 .ta{
+    display: none;
+}
+.about_ment {
+    margin: 0 15px 25px 15px;
+}
+.am_txt1 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.am_txt2 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    color: #555;
+}
+.am_more a {
+    display: block;
+    width: 125px;
+    padding: 6px 0 6px 18px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #393839;
+}
+.about_list li {
+    position: relative;
+    margin-bottom: 2px;
+}
+.about_list li .about_photo {
+    overflow: hidden;
+}
+.about_list li .about_photo img {
+    transition: 0.5s;
+}
+.about_list li:hover .about_photo img {
+    transform: scale(1.2);
+}
+.about_photo .ta {
+    display: none;
+}
+.about_photo .mo {
+    height: 120px;
+    object-fit: cover;
+}
+/* 
+object-fit : 요소의 컨텐츠 크기를 어떤 방식으로 저장해 요소에 맞출 것인지를 지정하는 속성
+    - contain : 대체 컨텐츠의 가로세로비율 유지, 요소 박스 내부에 들어가도록 크기를 맞춘다.
+    - cover : 대체 컨텐츠의 가로세로비율 유지, 요소 박스를 가득 채우도록 함. 상호간의 사이즈가 일치하지 않으면 일부가 잘려나간다.
+    - fill : 박스의 크기에 맞춰서 컨텐츠의 크기를 조절한다. 가득 채움. 가로세로비율이 안맞으면 컨텐츠가 늘어난다.
+    - none : 컨텐츠의 크기를 조절하지 않는다.
+    - scale-down : contain과 cover 중에 컨텐츠의 크기가 더 작아지는 값을 선택한다.
+*/
+.about_text {
+    position: absolute;
+    left: 25px;
+    top: 35px;
+    color: #fff;
+}
+.about_text .at1 {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+.about_text .at2 {
+    display: none;
+}
+.about_text .at3 {
+    padding-right: 25px;
+    font-size: 13px;
+    background-image: url(../img/ico_right_arrow_w.svg);
+    background-repeat: no-repeat;
+    background-size: 11px auto;
+    background-position: 110px center;
+}
+
+/* main - local */
+.location {
+    margin-top: 40px;
+}
+.location h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 1em;
+    font-weight: 900;
+    text-align: center;
+}
+.local_select {
+    margin: 0 15px 10px 15px;
+    background-image: url(../img/ico_select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 4px top 24px;
+}
+.local_select li {
+    display: none;
+    border: 1px solid #b5b5b5;
+}
+.local_select li a {
+    display: block;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #666;
+}
+.local_select .on {
+    display: block;
+}
+.local_map {
+    height: 500px;
+    background-color: rgb(200, 200, 190);
+}
+.local_info {
+    margin: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.local_info h3 {
+    height: 18px;
+    margin-bottom: 15px;
+    text-indent: -99999px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.local_info .seoul {
+    background-image: url(../img/logo_branch_seoul.svg);
+}
+.local_info dl {
+    margin-bottom: 5px;
+}
+.local_info dt {
+    display: none;
+}
+.local_info dd {
+    color: #666;
+}
+
+/* footer - newsletter */
+#footer {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    background-color: #372e2d;
+}
+.newsletter {
+    padding: 20px 15px;
+    background-color: #e6e5e4;
+}
+.newsletter h2 {
+    width: 87px;
+    margin-bottom: 10px;
+}
+.newsletter .ment {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7e7873;
+}
+.newsletter .nl_form form {
+    display: flex;
+}
+.newsletter .nl_form input {
+    width: calc(100% - 84px);
+    height: 30px;
+    margin-right: 4px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: #555;
+    background-color: #fff;
+}
+.newsletter .nl_form input::placeholder {
+    color: #95775f;
+}
+.newsletter .nl_form button {
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+    color: #d3d2d1;
+    background-color: #6f6865;
+}
+
+/* footer - end. */
+.f_menu {
+    margin: 20px 15px;
+}
+.f_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.f_menu li {
+    margin: 0 25px 5px 0;
+}
+.f_menu li a {
+    font-size: 13px;
+    color: #aaa;
+}
+.f_menu li:nth-child(3) a {
+    color: #eee;
+}
+.f_info {
+    margin: 20px 15px;
+    color: #948f85;
+}
+.f_info span {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+.f_branch, .f_family {
+    margin: 20px 15px;
+    border-top: 1px solid #4d4543;
+    padding-top: 20px;
+}
+.f_branch h3, .f_family h3 {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #695f58;
+}
+.f_branch ul, .f_family ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.f_branch li, .f_family li {
+    margin: 0 20px 15px 0;
+}
+.f_branch img, .f_family img {
+    width: auto;
+    height: 25px;
+}
+.f_family li:nth-child(1) img {
+    width: auto;
+    height: 16px;
+}
+
+/*
+@media (min-width: 768px) {
+    .main_slide {
+        display: none; - 예시이다. 바뀌는 부분들만 넣어줌. 이 부분은 메인 슬라이드를 창 너비가 768px 이상으로 커질 때, 메인 슬라이드의 사진이 사라지게 만든다.
+    }
+}
+*/
+
+/* media query - tablet */
+@media (min-width: 768px) {
+    /* 태블릿 헤더 */
+    .h_inner {
+        height: 120px;
+        padding: 0 30px;
+    }
+    .logo a {
+        width: 150px;
+        height: 25px;
+        background-size: 100% auto;
+    }
+    .hBtn_menu {
+        display: none;
+    }
+    .h_right {
+        display: flex;
+    }
+    .hBtn_rev {
+        display: block;
+        margin-right: 10px;
+    }
+    .hBtn_rev a {
+        display: block;
+        padding: 13px 44px;
+        font-size: 15px;
+        border: 2px solid #95775f;
+        color: #745d4a;
+    }
+    .hBtn_search a {
+        padding: 15px 60px 15px 26px;
+        font-size: 15px;
+        background-size: 22px auto;
+        background-position: right 26px top 13px;
+    }
+    .hBtn_lang {
+        display: block;
+        margin-left: 10px;
+    }
+    .hBtn_lang a {
+        display: block;
+        border: 1px solid #95775f;
+        padding: 14px 16px;
+        font-size: 15px;
+        color: #745d4a;
+    }
+    /* 태블릿 본문 1 */
+    .main_slide a {
+        position: relative;
+        display: block;
+        margin: 0 30px;
+    }
+    .ms_img {
+        overflow: hidden;
+    }
+    .ms_img .mo {
+        display: none;
+    }
+    .ms_img .ta {
+        display: block;
+        width: 180%;
+        margin-left: -40%;
+    }
+    .ms_text {
+        left: 40px;
+        bottom: 100px;
+    }
+    .ms_text .mst1 {
+        font-size: 46px;
+    }
+    .ms_text .mst2 {
+        margin: 25px 0;
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+    .ms_text .mst3 {
+        width: 160px;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    /* 태블릿 본문 2, 3 */
+    .promotion, .package {
+        padding: 45px 0;
+    }
+    .promotion .inner {
+        position: relative;
+        display: flex;
+    }
+    .package .inner {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .main_title {
+        box-sizing: border-box;
+        width: 380px;
+        padding: 30px 70px 0 50px;
+        text-align: left;
+    }
+    .main_title h2 {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 1em;
+    }
+    .main_title p {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    .promo_list {
+        width: calc(100% - 380px);
+    }
+    .promo_text {
+        padding: 40px 25px 50px 25px;
+    }
+    .promo_local {
+        left: 25px;
+        bottom: -16px;
+        padding: 6px 20px;
+        font-size: 15px;
+    }
+    .promo_title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .promo_date {
+        font-size: 15px;
+    }
+    .slide_pager {
+        display: none;
+    }
+    .slide_btn {
+        display: flex;
+        position: absolute;
+        bottom: 80px;
+        left: 200px;
+    }
+    .package .slide_btn {
+        left: auto;
+        right: 200px;
+    }
+    .slide_btn p {
+        box-sizing: border-box;
+        width: 58px;
+        height: 58px;
+        padding-top: 22px;
+        margin-left: 6px;
+        border: 1px solid #c6c6c6;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .slide_btn .slide_prev {
+        padding-left: 24px;
+    }
+    .slide_btn .slide_next {
+        padding-left: 20px;
+    }
+    .slide_btn p::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #b6b6b6;
+        border-right: 2px solid #b6b6b6;
+    }
+    .slide_btn .slide_prev::before {
+        transform: rotate(-135deg);
+    }
+    .slide_btn .slide_next::before {
+        transform: rotate(45deg);
+    }
+    .slide_btn p:hover, .slide_btn p:hover::before {
+        border-color: #555;
+    }
+
+    /* 태블릿 본문 4 */
+    .todo {
+        background-image: url(../img/todo_bg.jpg);
+        background-repeat: repeat-x;
+        background-size: auto 70%;
+        background-position: center;
+    }
+    .todo .inner {
+        position: relative;
+    }
+    .todo_title {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 51px;
+        height: 270px;
+        background-image: url(../img/todo_title.png);
+        background-size: auto 100%;
+        text-indent: -99999px;
+    }
+    .todo_tabBtn {
+        position: absolute;
+        bottom: 10%;
+        left: 120px;
+    }
+    .todo_tabBtn ul {
+        display: block;
+    }
+    .todo_tabBtn li {
+        position: relative;
+        padding: 30px 200px 8px 0;
+        border-top: 0;
+        border-bottom: 2px solid transparent;
+        font-size: 22px;
+        line-height: 1em;
+        letter-spacing: 3px;
+        background-color: transparent;
+    }
+    .todo_tabBtn .on {
+        font-size: 28px;
+        font-weight: 700px;
+        background-color: transparent;
+    }
+    .todo_tabBtn .on::after {
+        position: absolute;
+        top: 28px;
+        left: -18px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 0;
+        border-left: 8px solid #333;
+    }
+    .todo_panel {
+        margin-left: 340px;
+    }
+    /* 태블릿 - 본문 5 */
+    .overview {
+        position: relative;
+        margin-top: 100px;
+    }
+    .overview .ov01 {
+        width: 60%;
+        margin-left: 40%;
+    }
+    .overview_title {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 120px;
+    }
+    .overview_title h2 {
+        margin-bottom: 30px;
+        font-size: 50px;
+        line-height: 1em;
+    }
+    .overview_title p {
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+    .overview .ov2 {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 40%;
+        height: 100%;
+        padding-right: 20px;
+    }
+    .ov21, .ov23 {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+    }
+    .ov21 {
+        padding-bottom: 3px;
+    }
+    .ov23 {
+        padding-top: 3px;
+    }
+    .ov_slide01, .ov_slide05, .ov_card, .ov_card a, .ov_card figure {
+        display: block;
+        height: 100%;
+    }
+    .ov_card figure img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .ov_card .text {
+        left: 20px;
+        bottom: 20px;
+    }
+    .ov_card .text .tx1 {
+        margin-bottom: 7px;
+        font-size: 18px;
+    }
+    .ov_card .text .tx2 {
+        font-size: 14px;
+    }
+    .overview_controls {
+        position: absolute;
+        left: 40%;
+        top: 160px;
+        width: 60%;
+    }
+    .overview_pager {
+        display: block;
+        width: 55%;
+        height: 2px;
+        background-color: #ddd;
+    }
+    .overview_pager p {
+        width: 20%;
+        height: 100%;
+        background-color: #222;
+    }
+    .overview_prev, .overview_next {
+        bottom: auto;
+        top: 17px;
+        border-radius: 0;
+        background-color: #9d8f82;
+    }
+    .overview_prev {
+        left: 0;
+    }
+    .overview_next {
+        right: auto;
+        left: 64px;
+    }
+    /* 태블릿 - 본문 6 */
+    .about {
+        margin-top: 100px;
+    }
+    .about h2 {
+        font-size: 50px;
+        margin: 0 0 50px 30px;
+    }
+    .about h2 .mo {
+        display: none;
+    }
+    .about h2 .ta {
+        display: block;
+    }
+    .about_ment {
+        position: relative;
+        margin: 0 15px 50px 30px;
+    }
+    .about_ment .am_txt1 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 1em;
+    }
+    .about_ment .am_txt2 {
+        margin-bottom: 0;
+        font-size: 17px;
+        letter-spacing: -0.1px;
+        line-height: 1.7em;
+    }
+    .am_more a {
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        padding: 12px 25px 12px 20px;
+        font-size: 15px;
+        line-height: 1em;
+    }
+    .about_list {
+        margin: 0 30px;
+    }
+    .about_list ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about_list li {
+        margin-bottom: 50px;
+    }
+    .about_photo .ta {
+        display: block;
+        width: 170px;
+        object-fit: cover;
+    }
+    .about_photo .mo {
+        display: none;
+    }
+    /* 
+    object-fit : 요소의 컨텐츠 크기를 어떤 방식으로 저장해 요소에 맞출 것인지를 지정하는 속성
+        - contain : 대체 컨텐츠의 가로세로비율 유지, 요소 박스 내부에 들어가도록 크기를 맞춘다.
+        - cover : 대체 컨텐츠의 가로세로비율 유지, 요소 박스를 가득 채우도록 함. 상호간의 사이즈가 일치하지 않으면 일부가 잘려나간다.
+        - fill : 박스의 크기에 맞춰서 컨텐츠의 크기를 조절한다. 가득 채움. 가로세로비율이 안맞으면 컨텐츠가 늘어난다.
+        - none : 컨텐츠의 크기를 조절하지 않는다.
+        - scale-down : contain과 cover 중에 컨텐츠의 크기가 더 작아지는 값을 선택한다.
+    */
+    .about_text {
+        width: 138px;    
+        left: 20px;
+    }
+    .about_text .at1 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 1em;
+    }
+    .about_text .at2 {
+        display: block;
+        font-size: 14px;
+    }
+    .about_text .at3 {
+        display: none;
+    }
+    /* 본문 7 - location */
+}

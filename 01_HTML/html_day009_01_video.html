@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 삽입</title>
+    <style>
+        .ex02{
+            width: 400px;
+            height: 400px;
+            margin-top: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .ex02 video{
+            height: 600px;
+            margin-left: -450px;
+        }
+    </style>
+</head>
+<body>
+    <h1>video / source</h1>
+    <ol>
+        <li>4k 비디오 다운로드 프로그램을 이용</li>
+        <li>Youtube 등 비디오가 있는 사이트의 링크를 복사(화면 최상단의 링크 주소 등)</li>
+        <li>4k 비디오에서 링크 복사 버튼 클릭 > 다운로드(용량과 화질을 고려.)</li>
+        <li>video 태그 작성</li>
+        <li>video 태그 안에 source 태그 열기> src=""로 경로 지정</li>
+        <li>
+            <mark>video 태그의 속성</mark>
+            <ul type="square">
+                <li>controls : 컨트롤 패널을 표시해줌. 재생, 일시정지 등</li>
+                <li>width / height : 영상의 가로/세로 사이즈를 정해주는 속성</li>
+                <li>autoplay : 자동재생</li>
+                <li>muted : 음소거</li>
+                <li>Ex) 켜자말자 자동재생되는 영상만 나오는 경우(정지 안되고 계속 재생) > autoplay와 muted를 함께 사용한 경우이다.</li>
+                <li>loop : 반복재생</li>
+            </ul>
+        </li>
+    </ol>
+    <!-- 예제01 -->
+    <!-- class 속성 : 같은 이름 가능(동시에 값 바꾸는 것도 가능), 
+        id 속성 : 개체의 고유 속성, 같은 이름 불가 -->
+    <div class="ex01" style="height: 50vh; overflow; hidden;">
+        <video autoplay muted loop width="400px">
+            <source src="./img/Bar. Julian Kim - Yeon.mp4">
+        </video>
+    </div>
+    <!-- 예제02 -->
+    <div class="ex02">
+        <video autoplay loop muted>
+            <source src="./img/Bar. Julian Kim - Insta Live.mp4">
+        </video>
+    </div>
+    <br><br>
+    <h1>iframe</h1>
+    <ol>
+        <li>영상의 html 문서 주소를 넣어서 사용</li>
+        <li>
+            <textarea cols="110" rows="1">
+                <iframe iframe src="영상주소" title="설명" width="너비" height="높이"></iframe>
+            </textarea>
+        </li>
+        <li>동영상을 우클릭하여 소스를 복사하여 옮기면 iframe 태그의 형태로 나타난다.</li>
+        <li>간혹 막혀있는 경우도 있음. > 그럴 경우에는 다운로드 해서 쓰던지 ㅇㅇ</li>
+    </ol>
+    <!-- 예제 03 -->
+    <iframe width="691" height="389" src="https://www.youtube.com/embed/bFvqf8Z13PU" 
+    title="He throw." frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- 이와 같이 재생이 불가능한 경우가 자주 있음. -->
+</body>
+</html>

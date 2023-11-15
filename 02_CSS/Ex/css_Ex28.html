@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex28</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style */
+        div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 3px dotted #999;
+            background-color: #eee;
+        }
+
+        div p {
+            position: absolute;
+        }
+
+        div > p:nth-child(2) {
+            top: 0;
+            right: 20px;
+            font-size: 120px;
+            line-height: 120px;
+        }
+        div > p:nth-child(1) {
+            transform: rotate(-90deg);
+            bottom: 90px;
+            left: -60px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: serif;
+            letter-spacing: 5px;
+        }
+        div > p:nth-child(3) {
+            bottom: 10px;
+            left: 35px;
+            font-size: 50px;
+            letter-spacing: 20px;
+        }
+        div > p:nth-child(4) {
+            transform: rotate(90deg);
+            bottom: 25px;
+            right: -5px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>WEDNESDAY</p>
+        <p>06</p>
+        <p>FEB</p>
+        <p>2013</p>
+    </div>
+</body>
+</html>

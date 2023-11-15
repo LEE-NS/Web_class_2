@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex17-2</title>
+</head>
+<body>
+    <form>
+        <div>
+            <p>고객명 : <input type="text"></p>
+            <p>전화번호 : <input type="tel"></p>
+            <p>E-mail : <input type="email"></p>
+        </div>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <p><input type="radio" value="Small" name="pizza_size"> Small</p>
+            <p><input type="radio" value="Medium" name="pizza_size"> Medium</p>
+            <p><input type="radio" value="Large" name="pizza_size"> Large</p>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <p><input type="checkbox" value="bacon" name="topping"> 베이컨</p>
+            <p><input type="checkbox" value="cheese" name="topping"> 치즈</p>
+            <p><input type="checkbox" value="onion" name="topping"> 양파</p>
+            <p><input type="checkbox" value="mushroom" name="topping"> 버섯</p>
+        </fieldset>
+        <div>
+            <p>희망배송시간 <input type="time"></p>
+        </div>
+        <br>
+        <div>
+            <p>배송시 요청사항 : <textarea></textarea></p>
+        </div>
+        <br>
+        <div>
+            <p>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시 선택하기">
+            </p>    
+        </div>
+    </form>
+</body>
+</html>

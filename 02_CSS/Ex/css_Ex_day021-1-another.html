@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day021-1_another</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style */
+        h3 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .box {
+            position: relative;
+            width: 650px;
+            height: 520px;
+            margin: 0 auto;
+            background-color: beige;
+        }
+
+        .box > p {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: #fff;
+            background-color: tomato;
+        }
+
+        .box > .html {
+            top: 70px;
+            left: 275px;
+        }
+
+        .box > .css {
+            top: 150px;
+            left: 140px;
+        }
+
+        .box > .py {
+            top: 150px;
+            right: 140px;
+        }
+
+        .box > .c {
+            bottom: 150px;
+            left: 140px;
+        }
+
+        .box > .j {
+            bottom: 150px;
+            right: 140px;
+        }
+
+        .box > .php {
+            bottom: 70px;
+            left: 275px;
+        }
+
+        .box > p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>프로그래밍 강좌</h3>
+    <div class="box">
+        <p class="html">HTML<br>강좌</p>
+        <p class="css">CSS<br>강좌</p>
+        <p class="py">Python<br>강좌</p>
+        <p class="c">C#<br>강좌</p>
+        <p class="j">JAVA<br>강좌</p>
+        <p class="php">PHP<br>강좌</p>
+    </div>
+    <br>
+    <p class="html"><span>HTML<br>강좌</span></p>
+    <p class="css"><span>CSS<br>강좌</span></p>
+    <p class="py"><span>Python<br>강좌</span></p>
+    <p class="c"><span>C#<br>강좌</span></p>
+    <p class="j"><span>JAVA<br>강좌</span></p>
+    <p class="php"><span>PHP<br>강좌</span></p>
+</body>
+</html>

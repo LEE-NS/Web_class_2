@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex20221128-2</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+        /* #wrap */
+        #wrap {
+            line-height: 1.6em;
+            font-size: 18px;
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .inner {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        /* style s1 */
+        #s1 {
+            background-color: lightskyblue;
+        }
+
+        #s1 .inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #s1 .ga {
+            width: 150px;
+            height: 150px;
+
+            background-color: cornflowerblue;
+        }
+
+        #s1 .na {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            margin-top: 70px;
+        }
+
+        #s1 .na li {
+            width: 70px;
+            height: 40px;
+
+            background-color: cornflowerblue;
+        }
+
+        /* style s2 */
+        #s2 {
+            padding: 50px 0;
+            background-color: lavender;
+        }
+
+        #s2 .inner {
+            position: relative;
+        }
+
+        #s2 .da {
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: coral;
+        }
+
+        #s2 .ra {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        #s2 .ra li {
+            width: 148px;
+            height: 100px;
+            background-color: coral;
+        }
+
+        #s2 .ma {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 80px;
+            height: 20px;
+            background-color: coral;
+        }
+
+        /* style s3 */
+        #s3 {
+            padding: 50px 0;
+            background-color: lightgoldenrodyellow;
+        }
+
+        #s3 .inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #s3 .left {
+            position: relative;
+        }
+
+        #s3 .left .ba {
+            width: 163px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: sandybrown;
+        }
+
+        #s3 .left .sa li {
+            width: 311px;
+            height: 60px;
+            margin-bottom: 10px;
+            background-color: sandybrown;
+        }
+
+        #s3 .left .a {
+            position: absolute;
+            top: 25px;
+            right: 0px;
+            width: 80px;
+            height: 25px;
+            background-color: sandybrown;
+        }
+
+        #s3 .right {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 450px;
+        }
+
+        #s3 .right .ja {
+            width: 220px;
+            height: 130px;
+            background-color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section id="s1">
+            <div class="inner">
+                <p class="ga">가</p>
+                <ul class="na">
+                    <li>나1</li>
+                    <li>나2</li>
+                    <li>나3</li>
+                    <li>나4</li>
+                </ul>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="inner">
+                <p class="da">다</p>
+                <ul class="ra">
+                    <li>라1</li>
+                    <li>라2</li>
+                    <li>라3</li>
+                    <li>라4</li>
+                    <li>라5</li>
+                </ul>
+                <p class="ma">마</p>
+            </div>
+        </section>
+        <section id="s3">
+            <div class="inner">
+                <div class="left">
+                    <p class="ba">바</p>
+                    <ul class="sa">
+                        <li>사1</li>
+                        <li>사2</li>
+                        <li>사3</li>
+                    </ul>
+                    <p class="a">아</p>
+                </div>
+                <div class="right">
+                    <p class="ja">자1</p>
+                    <p class="ja">자2</p>
+                    <p class="ja">자3</p>
+                    <p class="ja">자4</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

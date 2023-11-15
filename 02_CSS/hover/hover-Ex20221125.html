@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover-Ex20221125</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* style */
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+            margin: 30px auto;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            background-color: beige;
+        }
+
+        li {
+            width: 15%;
+            height: 60px;
+            line-height: 60px;
+            background-color: darkslategrey;
+
+            transition: all 1s;
+        }
+
+        /* style h1 */
+        .h1 li:hover {
+            border-bottom: 10px solid #fc0000;
+        }
+
+        /* style h2 */
+        .h2 li {
+            position: relative;
+        }
+
+        .h2 li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: 10px;
+            background-color: #fc0000;
+            transition: all 1s;
+        }
+
+        .h2 li:hover::after {
+            width: 100%;
+        }
+
+        /* style h3 */
+        .h3 li {
+            position: relative;
+        }
+
+        .h3 li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 10px;
+            transition: all 1s;
+            transform: scale(0);
+            background-color: #fc0000;
+            opacity: 0;
+        }
+
+        .h3 li:hover::after {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+
+        /* style h4 */
+        .h4 li {
+            position: relative;
+        }
+
+        .h4 li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #fc0000;
+            transition: all 1s;
+            opacity: 0;
+        }
+
+        .h4 li:hover::after {
+            opacity: 1;
+            /* display는 transition 적용이 되지 않는다. 대신에 opacity와 visibility를 사용
+            opacity - f12로 봤을 때 공간도 남고 선택은 가능, visibility - f12로 봤을 때 공간은 남지만 선택 불가능 */
+        }
+
+        /* style h5 transform: scale*/
+        .h5 li {
+            position: relative;
+        }
+
+        .h5 li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fc0000;
+            transition: all 1s;
+            transform: scale(1, 0);
+        }
+
+        .h5 li:hover::after {
+            transform: scale(1, 1)
+        }
+
+        .h5 li p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* style h6 */
+        .h6 li {
+            position: relative;
+        }
+        
+        .h6 li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 50%;
+            right: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #fc0000;
+            transition: all 1s;
+            transform: scale(0, 0);
+            opacity: 0;
+        }
+
+        .h6 li:hover::after {
+            transform: scale(1, 1);
+            opacity: 1;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="h1">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+    <ul class="h2">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+    <ul class="h3">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+    <ul class="h4">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+    <ul class="h5">
+        <li><p>menu1</p></li>
+        <li><p>menu2</p></li>
+        <li><p>menu3</p></li>
+        <li><p>menu4</p></li>
+        <li><p>menu5</p></li>
+        <li><p>menu6</p></li>
+    </ul>
+    <ul class="h6">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+</body>
+</html>

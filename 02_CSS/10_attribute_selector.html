@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        h4[class] {
+            color: royalblue;
+        }
+        /* 해석 : class의 속성을 가진([class]) h4 태그를 선택해서 중괄호 안의 속성을 적용 */
+
+        p[class="cafe"] {
+            color: red;
+        }
+        /* 해석 : class 속성이 cafe 값인 태그를 선택 */
+
+        p[class~="cafe"] {
+            color: green;
+        }
+        /* 해석 : class 속성 중 cafe 값이 '포함된' 태그를 선택  */
+
+        p[class|="cafe"] {
+            color: blue;
+        }
+        /* 해석 : class 속성 중 'cafe 또는 cafe- 값으로 시작'하는 요소를 선택  */
+
+        p[class^="cafe"] {
+            color: hotpink;    
+        }
+        /* 해석 : class 속성 중 'cafe 또는 cafe 값으로 시작'하는 요소를 선택 */
+
+        p[class$="cafe"] {
+            color: darkgoldenrod;
+        }
+        /* 해석 : class 속성 중 'cafe 또는 cafe 값으로 끝'나는 요소를 선택 */
+
+        p[class*="ee"] {
+            color: springgreen;
+        }
+        /* 해석 : class 속성 중 'ee 값 이거나 ee 값을 포함'한 요소를 선택 */
+    </style>
+</head>
+<body>
+    <div>
+        <h4 class="h_0">속성 선택자</h4>
+        <h4>알아보기</h4>
+        <p class="cafe">스타벅스</p>
+        <p class="cafeee">이디야</p>
+        <p class="eecafe">할리스</p>
+        <p class="ee cafe aa">파스쿠치</p>
+        <p class="cafe-1">엔제리너스</p>
+    </div>
+</body>
+</html>

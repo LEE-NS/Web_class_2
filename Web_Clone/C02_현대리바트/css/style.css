@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* #wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+}
+/* header */
+#header {
+    border-bottom: 1px solid #c8c8c8;
+}
+.h_in {
+    position: relative;
+    width: 1200px;
+    height: 90px;
+    /* header height 평균 80 ~ 150px */
+    margin: 0 auto;
+}
+.logo {
+    padding-top: 18px;
+    /* 첫 번째 자식태그의 상단 margin 과 막내 자식태그의 하단 margin은 부모태그 경계라인 바깥으로 생성된다. .logo는 .h_in의 첫 번째 자식태그이기 때문에 margin-top을 사용하게되면 .h_in 영역 상단 바깥으로 여백이 만들어져서 헤더 내용 전체의 시작라인이 내려오게 된다. 그래서 .logo의 상단 여백은 padding을 사용하는것이 옳다. */
+}
+.logo a {
+    display: block;
+    width: 145px;
+    height: 50px;
+    background-image: url(../img/logo.png);
+    text-indent: -99999px;
+}
+.gnb {
+    position: absolute;
+    right: 56px;
+    top: 53px;
+}
+.gnb ul li {
+    float: left;
+    padding: 0 42px;
+}
+.gnb li a {
+    font-size: 17px;
+    color: #333;
+}
+.gnb li:hover a {
+    color: #029c82;
+}
+.open_search {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.open_search a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icon_sc.png);
+    text-indent: -99999px;
+}
+.utill {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.utill li {
+    float: left;
+    margin-left: 12px;
+}
+.utill li a {
+    color: #777;
+}
+.utill li:hover a {
+    color: #333;
+}
+
+/* main - main slide*/
+.main_slide {
+    position: relative;
+    margin-bottom: 80px;
+}
+.main_slide .ms_list {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.ms_list a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.ms_preview {
+    position: absolute;
+    top: 268px;
+    left: 50%;
+    margin-left: -600px;
+}
+.ms_preview a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/a_left.png);
+    text-indent: -99999px;
+}
+.ms_next {
+    position: absolute;
+    top: 268px;
+    right: 50%;
+    margin-right: -600px;
+}
+.ms_next a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/a_right.png);
+    text-indent: -99999px;
+}
+
+/* main - brand */
+.brand {
+    width: 1200px;
+    margin: 0 auto 80px auto;
+}
+.brand_title {
+    line-height: 1em;
+    /* - 글자의 크기가 reset에서 설정한 lineheight 20px 보다 크게 사용될 경우 해당 태그의 행간을 다시 설정해야한다. 태그의 기본 높이값 == 설정된 line height. fontsize를 키운다고 해서 태그의 세로공간 크기가 늘어나지 않는다. 그래서 lineheight 값을 설정해줘야 한다. */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 500;
+}
+    /* em - 주로 폰트와 관련된 속성에 사용됨
+
+        fontsize 속성에 em단위를 쓰면 상위태그의 폰트 크기에 비례적용 됨
+        ex) body {font-size: 20px;}
+                .list {font-size: 2em;} - 폰트 크기가 40px로 인식
+    
+        lineheight 속성에 em단위를 쓰면 현재 태그의 폰트 크기에 비례적용 됨
+        ex) body {font-size: 20px; line-height: 1.5em;}
+                - 폰트 크기 20px, 행간 30px로 인식
+            body {font-size: 2em; line-height: 1.5em;}
+                - 폰트 크기 40px, 행간 60px로 인식
+    */
+.brand_L {
+    float: left;
+    margin-right: 10px;
+}
+.brand_list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.brand_L a {
+    display: block;
+    width: 230px;
+    height: 172px;
+    background-image: url(../img/brand01.jpg);
+    text-indent: -99999px;
+    border: 1px solid #d3d3d3;
+}
+.brand_R {
+    float: left;
+    width: 958px;
+}
+.brand_R li {
+    float: left;
+    margin-right: 10px;
+}
+.brand_R li:nth-child(4n) {
+    margin-right: 0;
+}
+.brand_R li:nth-child(-n + 4) {
+    margin-bottom: 10px;
+}
+.brand_R li a {
+    display: block;
+    width: 230px;
+    height: 80px;
+    text-indent: -99999px;
+    border: 1px solid #d3d3d3;
+}
+.brand_R .br01 a {background-image: url(../img/brand02.jpg);}
+.brand_R .br02 a {background-image: url(../img/brand03.jpg);}
+.brand_R .br03 a {background-image: url(../img/brand04.jpg);}
+.brand_R .br04 a {background-image: url(../img/brand05.jpg);}
+.brand_R .br05 a {background-image: url(../img/brand06.jpg);}
+.brand_R .br06 a {background-image: url(../img/brand07.jpg);}
+.brand_R .br07 a {background-image: url(../img/brand08.jpg);}
+.brand_R .br08 a {background-image: url(../img/brand09.jpg);}
+
+/* main - event */
+.event {
+    padding: 60px 0;
+    margin-bottom: 80px;
+    background-color: #f5f5f5;
+}
+.ev_in {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.ev_in::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.ev_title {
+    float: left;
+}
+.ev_title::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-bottom: 15px;
+    background-color: #333;
+}
+.ev_title p {
+    font-size: 16px;
+    margin-bottom: 35px;
+    color: #444;
+}
+.ev_title h2 {
+    line-height: 1em;
+    font-size: 28px;
+    font-weight: 500;
+}
+.ev_list {
+    float: right;
+}
+.ev_list li {
+    float: left;
+    margin-left: 30px;
+}
+.ev_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.ev_btn p {
+    float: left;
+    margin-right: 5px;
+}
+.ev_btn .ev_preview a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    background-image: url(../img/btnL.png);
+}
+.ev_btn .ev_next a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    background-image: url(../img/btnR.png);
+}
+/* main - show room */
+.store {
+    width: 1200px;
+    margin: 0 auto 80px auto;
+}
+.st_title {
+    line-height: 1em;
+    margin-bottom: 20px;
+    font-size: 29px;
+    font-weight: 500;
+}
+.st_list ul {
+    display: flex;
+    justify-content: space-between;
+}

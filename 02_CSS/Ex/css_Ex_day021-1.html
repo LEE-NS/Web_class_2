@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_021_1</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* style box_0-0 */
+        .box_0-0 {
+            position: relative;
+            width: 100%;
+            height: 1200px;
+        }
+  
+        .box_0-0 > h1 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 300px;
+            margin-left: -150px;
+            text-align: center;
+        }
+
+        .box_0-0 > .box_0-1 {
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            width: 1200px;
+            height: 1000px;
+            margin-left: -600px;
+            text-align: center;
+            background-color: beige;
+        }
+
+        .box_0-0 > .box_0-1 > p {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            margin-left: -75px;
+            border-radius: 25px;
+            background-color: orangered;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .box_0-0 > .box_0-1 > p > a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25% 0 0 -25%;
+            
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-0 {
+            top: 17%;
+            left: 50%;
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-1 {
+            top: 30%;
+            left: 70%;
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-2 {
+            top: 50%;
+            left: 70%;
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-3 {
+            bottom: 17%;
+            left: 50%;
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-4 {
+            top: 50%;
+            left: 30%;
+        }
+
+        .box_0-0 > .box_0-1 > .a_0-5 {
+            top: 30%;
+            left: 30%;
+        }
+
+        /* style box_1-0 */
+        .box_1-0 {
+            position: relative;
+            width: 50%;
+            height: 100vh;
+            background-color: lightcoral;
+        }
+        .box_1-0 > p {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box_1-0 > .p_1-0 {
+            position: sticky;
+            top: 100px;
+            left: 0px;
+            background-color: lightgoldenrodyellow;
+        }
+        .box_1-0 > .p_1-1 {
+            position: fixed;
+            top: 10px;
+            right: 0;
+            background-color: limegreen;
+        }
+        .box_1-0 > .p_1-2 {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            background-color: lightgrey;
+        }
+        .box_1-0 > .p_1-3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: lightblue;
+        }
+        .box_1-0 > .p_1-3 > span {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            top: 5%;
+            right: 5%;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_0-0">
+        <h1>프로그래밍 강좌</h1>
+        <div class="box_0-1">
+            <p class="a_0-0">
+                <a href="#">HTML<br>강좌</a>
+            </p>
+            <p class="a_0-1">
+                <a href="#">파이썬<br>강좌</a>
+            </p>
+            <p class="a_0-2">
+                <a href="#">자바<br>강좌</a>
+            </p>
+            <p class="a_0-3">
+                <a href="#">PHP<br>강좌</a>
+            </p>
+            <p class="a_0-4">
+                <a href="#">C#<br>강좌</a>
+            </p>
+            <p class="a_0-5">
+                <a href="#">CSS<br>강좌</a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="box_1-0">
+        <p class="p_1-0">300*300</p>
+        <p class="p_1-1">300*300</p>
+        <p class="p_1-2">300*300</p>
+        <p class="p_1-3">
+            300*300
+            <span>span</span>
+        </p>
+    </div>
+</body>
+</html>

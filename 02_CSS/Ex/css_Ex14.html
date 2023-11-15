@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex14</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* style */
+        .ul_0 {
+            width: 430px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .ul_0::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .ul_0 li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .ul_0 > li:not(:last-child) {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="ul_0">
+            <li>box1</li>
+            <li>box2</li>
+            <li>box3</li>
+            <li>box4</li>
+        </ul>
+    </div>
+</body>
+</html>

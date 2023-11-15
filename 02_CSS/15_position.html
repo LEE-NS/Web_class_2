@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* style */
+        .box {
+            position: relative;
+            /* 현재 재배치 할 위치의 기준점을 .box 로 잡아두었다. */
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+        }
+
+        .box > .con1 {
+            position: absolute;
+            /* relative가 걸린 .box를 기준으로 재배치 될 것이다. 입력되면 부유 상태가 된다. */
+            bottom: 50px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .box > .con2 {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+        }
+
+        .box > .con3 {
+            position: fixed;
+            bottom: 100px;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background-color: darkkhaki;
+        }
+
+        .box > .con3 > span {
+            position: absolute;
+            /* 자신의 상위 요소에 지정되어있는 position을 따라간다. */
+            bottom: 0;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: darkseagreen;
+        }
+
+        /* position을 통해서 상하좌우로 위치를 잡을 때, 모니터 해상도를 고려하여 가급적이면 px이 아닌 %로 잡을 것. 절대적이지는 않다. */
+
+        .box > .con4 {
+            position: sticky;
+            top: 50px;
+            width: 100px;
+            height: 50px;
+            background-color: violet;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 100vh;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>position : 요소의 위치 지정밥법 유형을 결정</h1>
+    <ol>
+        <li>static : 원래 상태 (default)</li>
+        <li><b>relative</b> : absolute 영역의 기준</li>
+        <li>
+            <b>absolute</b> : 상위 요소의 relative를 기준으로 위치를 재배치 <br>
+            relatve가 상위요소(형제 태그가 아닌 부모 태그 또는 그 이상)에 위치하고, absolute가 하위요소(형제 태그가 아닌 자식 태그 또는 그 이하)에 위치한다. <br>
+            더 가까운 상위요소에 position 속성값을 가진 요소가 있다면, 그 요소를 기준으로 배치된다.
+        </li>
+        <li>fixed : 요소 위치를 스크린을 기준으로 배치</li>
+        <li>sticky : 필수적으로 top, bottom, left, right 중에 하나를 설정해 주어야 하고, 설정된 위치에 도달하기 전 까지는 static 속성처럼 행동하다가 설정된 위치에 다다르면 fixed 처럼 행동한다.</li>
+        <li>
+            같이 사용되는 스타일 속성 : top or bottom, left or right (각각 상or하/좌or우에서 얼마나 올 것인지) <br>
+            단위 : px, %, auto(할당했던 값을 무효화 시킴, 0을 주면 왼쪽 상단으로 오지만 이 상태가 무효화 된 상태)
+        </li>
+        <li>span 태그나 a 태그 같은 인라인 요소에 absolute 값을 주게 되면 블락 속성을 가지게 된다.</li>
+    </ol>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <div class="box">
+        <p class="con1">content1</p>
+        <p class="con2">content2</p>
+        <p class="con3">
+            content3(광고아님)
+            <span>span</span>
+        </p>
+        <p class="con4">sticky</p>
+    </div>
+    <!-- box -->
+    <div class="box2"></div>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+</body>
+</html>

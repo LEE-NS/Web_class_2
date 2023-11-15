@@ -1,0 +1,31 @@
+1) 5번(option)은 사용되지 않는다.
+
+2) </optgroup>까지 있어야 완성
+
+3) fieldset 태그를 통해 외곽선을 만들 수 있다.
+
+4) 안되진 않지만 안하는 것이 좋다.
+
+5) nav 태그는 header 태그 안에서 주로 사용된다.
+
+6) cementic 태그는 body 태그 내에서 사용된다.
+
+7) cementic 태그는 대체로 block 요소이다.
+
+8) 호환되지 않는 브라우저(Firefox, Edge 등)가 있기도 했다.
+
+9) main 태그 내에서 배치될 정보의 형태에 따라 section 또는 article로 묶는다.
+
+10) 되는 것(submit, reset 등)도 있고 아닌 것(radio, checkbox 등)도 있음
+
+11) label 태그 : input 태그에 제목을 붙인다. input 태그와 함께 id 속성이 같을 때, 상호작용시 input 태그를 활성화 시킬 수 있게 함.
+label 속성 : optgroup 태그에서 option 태그들이 어떤 항목 아래 묶여있는지 이름을 붙여주는 속성.
+
+12) 같은 역할을 하지만 태그 자체는 다르다.
+
+13) form 태그 안에 있어야 한다(input 태그의 속성별 기능 수행)
+
+14) textarea 태그이다.
+
+15) radio 속성은 name 속성을 통해 카테고리를 구분한다.
+

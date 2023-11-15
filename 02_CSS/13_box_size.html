@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        /* style */
+        div {
+            width: 300px;
+            height: 80px;
+            margin-bottom: 20px;
+            background-color: lightblue;
+        }
+        .box1 {
+            padding: 20px;
+            box-sizing: content-box;
+            /* content-box는 디폴트값이라서 적용할 필요 X */
+        }
+        .box2 {
+            padding: 20px;
+            box-sizing: border-box;
+            /* padding은 적용됐지만 요소 크기는 그대로임. 마치 padding이 안쪽으로 적용되고 원래 요소가 줄어든 듯 한 모습. 고정된 크기를 유지한다.*/
+        }
+        .box3 {
+            border: 10px solid #444;
+
+        }
+        .box4 { 
+            border: 10px solid #444;
+            box-sizing: border-box;
+            /* box2와 비슷한 모습을 보여준다. */
+        }
+
+
+        /* border-box를 reset으로 설정 시에는 컨텐츠 양에 따라서 요소의 크기가 변하지 않기에 페이지 레이아웃에 맞춰서 컨텐츠를 작성하기가 용이해진다. */
+    </style>
+</head>
+<body>
+    <h1>box-sizing : 박스의 크기를 결정하는 방식 (내가 지정한 너비, 높이 안에 padding과 border 포함 여부를 결정)</h1>
+    <p>속성값 content-box : 지정한 요소의 크기에 padding, border를 미포함(default)</p>
+    <p>속성값 border-box : 지정한 요소의 padding, border 포함</p>
+    <!-- padding의 영역까지 컨텐츠가 들어온다 -->
+    <br><br>
+    <div class="box1">
+        300*80px<br>
+        padding : 20px<br>
+        content-box
+    </div>
+    <div class="box2">
+        300*80px<br>
+        padding : 20px<br>
+        border-box
+    </div>
+    <div class="box3">
+        300*80px<br>
+        border<br>
+        content-box
+    </div>
+    <div class="box4">
+        300*80px<br>
+        border<br>
+        border-box
+    </div>
+</body>
+</html>

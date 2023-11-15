@@ -1,0 +1,31 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body, button, input {
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222;
+}    
+img, button, input {
+    vertical-align: top;
+}
+button, input {
+    border: 0;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+address {
+    font-style: normal;
+}

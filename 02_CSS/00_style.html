@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트 연결</title>
+    <link rel="stylesheet" href="./css/00_style_css.css">
+    <style>
+        h2{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 스타일시트 연결하기</h1>
+    <ul>
+        <li>
+            <h2>inline 스타일</h2>
+            <p>태그 옆(open 태그 안)에 style 속성으로 적어주는 방법</p>
+            <p>
+                style은 속성과 속성값이 있다.
+                <br>
+                <b>style="속성: 속성값;"</b> 의 형식으로 사용된다
+            </p>
+            <p style="background-color: lightblue;">box1</p>
+            <!-- background-color 라는 속성에 lightblue 라는 속성값을 사용한 예시 -->
+        </li>
+        <li>
+            <h2>내부 스타일시트</h2>
+            <p>CSS를 HTML  문서 내부에 스타일 태그로 적는 방법</p>
+            <p>head 태그 안에서 style 태그로 작성한다.</p>
+            <p>스타일을 줄 대상의 태그를 작성하고, <b>{속성: 속성값;}</b> 으로 작성한다.</p>
+        </li>
+        <li>
+            <h2>외부 스타일시트</h2>
+            <p>스타일 속성들을 CSS 파일로 따로 저장해서 HTML 문서에 링크 시키는 방법</p>
+            <p>보통의 홈페이지들은 이 방식을 사용하여 제작한다.</p>
+            <p>
+                홈페이지가 커지면 일일이 스타일을 줄 수 없다.<br>
+                한 개 씩 넣다보면 스크롤이 지나치게 길어져서 이후에 수정하거나 색인이 어려워진다.<br>
+                통상은 외부스타일 시트를 CSS 파일을 만들어서 따로 저장해서 HTML 문서에 링크시켜서 사용한다.
+            </p>
+            <ol>
+                <li>Ctrl + N 으로 새 창을 연다.</li>
+                <li>CSS 확장자명의 파일을 저장해둔다.</li>
+                <li>여기에 태그 {속성: 속성값;} 으로 스타일 속성값을 작성한다.</li>
+                <li>한가지 씩 뿐만 아니라, 한 번에 여러가지 속성도 넣을 수 있다.</li>
+                <li>HTML 문서 안에 head 태그에서 link 태그에 href 속성으로 경로를 연결해서 사용한다.</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>

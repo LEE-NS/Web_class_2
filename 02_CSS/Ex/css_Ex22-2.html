@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex22-2</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* box */
+        body > div {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        /* 코드 리팩토링에 신경을 써야 한다. */
+
+        /* style box_0*/
+        .box_0 {
+            background-color: khaki;
+        }
+
+        .box_0 > .p_0 {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            width: 300px;
+            height: 300px;
+            background-color: goldenrod;
+        }
+
+        .box_0 > .p_1 {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 100px;
+            height: 500px;
+            background-color: seagreen;
+        }
+
+        .box_0 > .p_2 {
+            position: absolute;
+            top: 600px;
+            left: 300px;
+            width: 500px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+
+        .box_0 > .p_2 > span {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 3px 10px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 15px;
+            background-color: red;
+            color: white;
+        }
+
+        /* style box_1 */
+        .box_1 {
+            background-color: lawngreen;
+        }
+
+        .box_1 > .p_1-0 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 600px;
+            height: 600px;
+            margin: -300px 0 0 -300px;
+            background-color: violet;
+        }
+
+        .box_1 > .p_1-0 > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_0">
+        <p class="p_0">300*300</p>
+        <p class="p_1">100*500</p>
+        <p class="p_2">
+            500*100
+            <span>특가</span>
+        </p>
+    </div>
+    <div class="box_1">
+        <p class="p_1-0">
+            position 가운데 정렬
+            <span>200*200</span>
+        </p>
+    </div>
+</body>
+</html>

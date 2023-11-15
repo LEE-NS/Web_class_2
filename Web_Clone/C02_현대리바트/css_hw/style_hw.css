@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+}
+/* header */
+#header {
+    border-bottom: 1px solid #ccc;
+}
+#header_in {
+    position: relative;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+.h_logo {
+    padding-top: 18px;
+}
+.h_logo a {
+    display: block;
+    width: 145px;
+    height: 54px;
+    text-indent: -99999px;
+    background-image: url(../img/logo.png);
+} 
+.gnb {
+    position: absolute;
+    right: 0;
+    bottom: 17px;
+    width: 665px;
+}
+.gnb ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb ul li {
+    font-size: 17px;
+}
+.gnb ul li:hover a {
+    color: #029c82;
+}
+.search a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    text-indent: -99999px;
+    background-image: url(../img/icon_sc.png);
+}
+.utill {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 310px;
+}
+.utill ul {
+    display: flex;
+    justify-content: space-between;
+}
+.utill ul li {
+    color: #999;
+}
+.utill ul li:hover a {
+    color: #131313
+}
+/* main - main_slide */
+.main_slides {
+    position: relative;
+    margin: 0 auto 80px auto;
+}
+.slide_list {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.slide_list a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.prev {
+    position: absolute;
+    top: 268px;
+    left: 50%;
+    margin-left: -600px;
+}
+.prev a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-indent: -99999px;
+    background-image: url(../img/a_left.png);
+}
+.next {
+    position: absolute;
+    top: 268px;
+    right: 50%;
+    margin-right: -600px;
+}
+.next a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-indent: -99999px;
+    background-image: url(../img/a_right.png);
+}
+
+/* main - brand */
+.brand {
+    width: 1200px;
+    margin: 0 auto 80px auto;
+}
+.brand_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.b_title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.brand_L {
+    width: 230px;
+    height: 172px;
+    border: 1px solid #d9d9d9;
+}
+.brand_R {
+    width: 960px;
+}
+.brand_R ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brand_R ul li {
+    width: 230px;
+    height: 80px;
+    border: 1px solid #d9d9d9;
+}
+.brand_R ul li:nth-child(-n+4) {
+    margin-bottom: 10px;
+}
+
+/* main - event */
+.event {
+    background-color: #fafafa;
+}
+.event_in {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.text_and_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ev_text::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 3px;
+    margin-bottom: 15px;
+    background-color: #131313;
+}
+.ev_text p {
+    width: 160px;
+    margin-bottom: 30px;
+    color: #777;
+}
+.ev_text h2 {
+    font-size: 28px;
+}
+.ev_btn {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+.ev_prev a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    background-image: url(../img/btnL.png);
+}
+.ev_next a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    background-image: url(../img/btnR.png);
+}
+.ev_con {
+    width: 920px;
+}
+.ev_con ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* main - show room */
+.show {
+    width: 1200px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+.show h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.show ul {
+    display: flex;
+    justify-content: space-between;
+}
+/* footer */
+.f_in-1 {
+    background-color: #fafafa;
+}
+.fnb {
+    width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.fnb ul {
+    display: flex;
+    justify-content: center;
+}
+.fnb ul li {
+    margin-left: 40px;
+    color: #999;
+}
+.fnb ul li:first-child {
+    margin-left: 0;
+}
+.fnb #point {
+    color: #131313;
+}
+.f_in-2 {
+    display: flex;
+    width: 1200px;
+    padding: 30px 0 80px 0;
+    margin: 0 auto;
+}
+.bw_logo {
+    margin-right: 30px;
+}
+.bw_logo a {
+    display: block;
+    width: 106px;
+    height: 40px;
+    text-indent: -99999px;
+    background-image: url(../img/fLogo.png);
+}
+.addrlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    color: #777;
+}
+.addrmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+}
+.addrmenu .f_point {
+    color: #131313;
+}
+.bar {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #777;
+    margin: 0 5px;
+}

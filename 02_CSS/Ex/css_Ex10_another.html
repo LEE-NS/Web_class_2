@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10 another</title>
+    <style>
+        /* reset : 아래와 같이 */
+        /* 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        */
+        body, h2 {
+            margin: 0;
+            padding: 0;
+        }
+        /* 여러가지 태그에 같은 스타일이 들어갈 때는 콤마(,)를 찍어서 같이 넣으면 같이 적용됨. */
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none; /* list의 문두에 표시되는 점을 없앰 */
+        }
+        /* style */
+        h2 {
+            padding: 20px 0;
+            margin-bottom: 30px;
+            text-align: center;
+            color: blueviolet;
+            background-color: antiquewhite;
+        }
+        ul {
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightseagreen;
+        }
+        ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        ul li img {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h2>고양이</h2>
+    <ul>
+        <li><img src="../img/cat2.jpg" alt="고양1"></li>
+        <li><img src="../img/cat3.jpg" alt="고양2"></li>
+        <li><img src="../img/cat4.jpg" alt="고양3"></li>
+        <li><img src="../img/cat5.jpg" alt="고양4"></li>
+    </ul>
+</body>
+</html>
